@@ -1,12 +1,97 @@
----
-layout: page
-title: Latest Posts
-description: "A simple and clean responsive Jekyll theme for words and photos."
-tags: [Jekyll, theme, themes, responsive, blog, minimalism]
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Place for Open Source Raumfeld Applications">
+    <meta name="author" content="Sascha T&ouml;nnies">
 
-<ul class="post-list">
-{% for post in site.posts limit:10 %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
-{% endfor %}
-</ul>
+    <title>RaumHub: The Place for Open Source Raumfeld Applications</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootswatch.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="http://www.raumhub.eu" class="navbar-brand">RaumHub</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="http://raumhub.wordpress.com/">Blog</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-12">
+            <img src="./images/raumhub.png" height="100px"/>
+            <p class="lead">The Place For Open Source Raumfeld Applications</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="type">About</h1>
+            </div>
+
+		<p>This place should become the main hub for all Raumfeld Open Source applications. Stay tuned!</p>
+
+          </div>
+        </div>
+
+
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+              <li><a href="http://raumhub.wordpress.com/">Blog</a></li>
+              <li><a href="http://raumhub.wordpress.com/feed/">RSS</a></li>
+              <li><a href="https://github.com/stoennies/raumhub/">GitHub</a></li>
+            </ul>
+            <p>Made by <a href="http://www.sascha-toennies.de" rel="nofollow">Sascha T&ouml;nnies</a>.</p>
+            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a> and <a href="http://bootswatch.com/" rel="nofollow">Bootswatch</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+
+          </div>
+        </div>
+        
+      </footer>
+    
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
